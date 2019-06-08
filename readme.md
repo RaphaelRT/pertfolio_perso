@@ -1,5 +1,5 @@
-# **Galaxy**
-by ROBERT Raphaël 
+# **PORTFOLIO OF RAPHAEL ROBERT**
+Developped by ROBERT Raphaël and Designed by Claire Longuebray
 
 
 ## Technology used
@@ -7,16 +7,17 @@ by ROBERT Raphaël
  - HTML
  - CSS
  - JS
- - Canvas
- - dat.gui
+ - three js
+ - gsap (tween)
+ - typed.js*
+ - anime-js
  - webGL
  - webpack
 
  ## Features
 
- - **speed** = set the speed of rotation
- - **spaceColor** = set  the background color that you want
- - **colorsSpirale A,B,C,etc...** = change color of each spiral you choose 
- - **sizeStarsSpirale A,B,C,etc...** = change size of each stars on different spiral
- - **galaxySize** = set the galaxy size
- - **explode** = the galaxy will rotate faster and faster and become smaller and smaller until a white screen 
+ - random position of the planet for destop
+ - loading page 
+ - check if user (on smartphone change orientation) and display a page
+ 
+
