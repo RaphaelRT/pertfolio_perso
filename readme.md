@@ -9,7 +9,7 @@ Developped by ROBERT Raphaël and Designed by Claire Longuebray
  - JS
  - three js
  - gsap (tween)
- - typed.js*
+ - typed.js
  - anime-js
  - webGL
  - webpack
