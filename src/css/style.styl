@@ -1,0 +1,484 @@
+
+html 
+    overflow x hidden
+    scroll-behavior: smooth;
+    background: #181844;
+     /* width */
+::-webkit-scrollbar 
+    width: 10px;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFF9EC; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #A09C93; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  cursor pointer
+}
+.loader
+    width 100vw
+    height 100vh
+    overflow hidden
+    position fixed
+    background: #181844;
+    z-index 200000;
+    display flex
+    justify-content center
+    align-items center
+    svg 
+        width 5%
+.scroll-bar
+    width 0.3vw
+    height 10vh
+    position fixed
+    bottom 0
+    transform-origin bottom center
+    z-index: 10000
+    background #f0f0f0
+    transition 0.1s transform
+
+.landcape-alert{
+    width: 100vw;
+    height:100vh;
+    background: #000000;
+    color: #ffffff;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 1s ease-in
+    opacity 0
+    display none
+}
+.landcape-alert svg{   
+   width: 10%;
+   margin-bottom: 5%;
+   transition: transform 1s ease;
+   transform: rotateZ(90deg)
+   animation: rotate 4s 1s linear infinite;
+}
+@keyframes rotate{
+    0%,10%{transform: rotateZ(90deg)}
+    20%{transform: rotateZ(45deg)}
+    30%,40%{transform: rotateZ(0deg)}
+    50%{transform: rotateZ(45deg)}
+    60%,100%{transform: rotateZ(90deg)}
+    
+}
+.landcape-alert span{   
+    color #FFF9EC
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    }
+
+
+body
+    overflow-x hidden
+.background_star
+    padding 0
+    height: 100vh;
+    width 100vw;
+    .stars
+        transition transform 0.5s linear
+    
+.twinkle
+    animation:twinkle 4s ease-in-out 0s alternate infinite
+@keyframes twinkle {
+    0%   { opacity:1 }
+    50%  { opacity:0}
+    100% { opacity:1 }
+}
+.main 
+    width 100vw
+    height 100vh
+    transition: opacity 0.1s ease-in
+    .cloud_star
+        width 20%
+        overflow hidden
+        transition: transform 0.3s linear
+        img 
+            width 70%
+    .left-cloud
+        transform:rotateY(180deg);
+    .title
+        // position fixed
+        h1 
+            color #ffffff
+            font-size 3em
+            font-family: 'ZCOOL QingKe HuangYou', cursive;
+            letter-spacing: 0.1em
+        .subTitle
+            width 100%
+            span
+                color #ffffff
+                font-size 1em
+                font-family: 'ZCOOL QingKe HuangYou', cursive;
+                letter-spacing: 0.1em
+    .scroll-mouse
+        :hover
+            cursor pointer
+        img 
+            width 3%
+            padding-bottom 5%
+    .bouncing
+        animation: bouncing 3s infinite
+@keyframes bouncing {
+    84% {
+     transform: translateY(0px) translateZ(0);
+    }
+    88% {
+     transform: translateY(-5px) translateZ(0);
+    }
+    92%{
+       transform: translateY(0px) translateZ(0); 
+    }
+    96%{
+       transform: translateY(-5px) translateZ(0); 
+    }
+    100%{
+       transform: translateY(0px) translateZ(0); 
+    }
+
+  }
+            
+    
+.inner
+    width 100vw
+    position absolute
+    transform: translateY(100vh)
+    z-index 10
+    .cloud_star-inner
+        width 100vw
+        height max-content
+        overflow hidden
+        position absolute
+        transition: transform 0.6s linear
+    .spaceShip
+        width 5%
+        margin auto
+        position relative
+        z-index 1
+        transform translateX(0.9px)
+        img 
+            width 80px
+            
+    .cloud
+        width 100vw
+        margin auto
+        position relative
+        z-index 2
+        overflow auto
+        margin-bottom: 5%
+        .cloud_background
+            width 55%
+            background-image url('../images/SVG/cloud.svg')
+            background-repeat no-repeat
+            background-position top
+            background-size 90%
+        .cloud_content
+            width 40vw
+            margin-left auto
+            margin-right 5%
+            margin-top 53%
+            .about 
+                width 40vw
+                opacity 0
+                transition opacity 0.7s ease-in
+                .about-title
+                     padding-bottom 5%
+                    h2 
+                        font-size 3.5em
+                        color #FFF9EC
+                        font-family: 'Oswald', sans-serif;
+                        letter-spacing: 0.1em
+                        font-weight: bold;
+                        display block
+            .me
+                display flex
+                justify-content center
+                align-items center
+                img
+                    width: 70%
+            .me-text
+                display flex
+                justify-content center
+                align-items center
+                p 
+                    width 37vw
+                    font-size 1.2em
+                    font-family: 'Oswald', sans-serif;
+                    letter-spacing: 0.1em
+            .some-skill-js
+                opacity 0
+                transition opacity 0.8s ease-in
+            .someSkills-title
+                padding-top 20%
+                padding-bottom 5%
+                font-size 1.5em
+                h2 
+                    font-family: 'Oswald', sans-serif;
+                    color #FFF9EC
+                    letter-spacing: 0.1em
+                    font-weight: bold;
+                    font-size 1.2em
+            .findmejs
+                opacity 0
+                padding-bottom 40%
+                transition opacity 1s ease-in
+            .findme-title
+                padding-top 10%
+                padding-bottom 5%
+                font-size 1.5em
+                h2 
+                    font-family: 'Oswald', sans-serif;
+                    color #FFF9EC
+                    letter-spacing: 0.1em
+                    font-weight: bold;
+                    font-size 1.2em
+            .skills-title
+                padding-top 10em
+                padding-bottom 4em
+            .logo-container
+                width 40vw
+                .find-logo
+                    :hover
+                        cursor pointer
+                    a
+                        :hover
+                            fill #3D3D7A
+                .logo
+                    display flex
+                    flex-direction column
+                    justify-content center
+                    align-items left
+                    svg 
+                         padding-bottom 10%
+                         width 40px
+                         fill #f0000
+                .logo-text
+                    display flex
+                    flex-direction column
+                    justify-content center
+                    align-items left
+                    text-align left
+                    padding-bottom 5%
+                    padding-top 1%
+                    span
+                        font-size 0.9em
+                        font-family: 'Oswald', sans-serif;
+                        letter-spacing: 0.1em
+                        text-transform: uppercase
+
+     .work
+         height 100vh
+         .work-title
+             h2 
+                color #ffffff
+                font-size 3em
+                font-family: 'ZCOOL QingKe HuangYou', cursive;
+                letter-spacing: 0.1em
+             span
+                font-family: 'ZCOOL QingKe HuangYou', cursive;
+                font-size 1.5em
+                color #f0f0f0
+                opacity 0.8
+                letter-spacing: 0.1em
+        .planet
+            margin-left 1%
+            opacity 0
+            transition opacity 0.5s ease-in
+            :hover
+                overflow visible
+                cursor pointer
+            circle 
+                opacity 0
+                transition opacity 0.3s ease
+            .project
+                transform scale(0)
+                position absolute
+                z-index 2
+                color #ffffff
+                font-size 1.1em
+                font-family: 'ZCOOL QingKe HuangYou', cursive;
+                letter-spacing: 0.1em
+                text-align center
+                border-radius 10px
+                
+            .scaled
+                transform scale(1,1)
+        .astronaute
+            border solid 1px black
+            width 10%
+            height 20%
+            position fixed
+            top 80vh
+            cursor pointer
+    .contact-container
+        width 100%
+        height 100vh
+        background #010101
+        position absolute
+        z-index 100
+        transition transform 0.6s linear
+        transform translateX(100%)
+        .contact_close
+            position: absolute;
+            top: 6%;
+            left: 96%;
+            transform: translate(-50%, -50%);
+            height: 8%;
+            width: 8%;
+            cursor: pointer;
+            z-index: 1000;
+            span 
+                display: block;
+                width: 40%;
+                height: 0.5vh;
+                position: absolute;
+                top: 50%;
+                left: 30%;
+                transform: translate(-50%, -50%);
+                background: #ffffff;
+                transition: 0.5s;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, .20);
+            span:nth-child(1)
+                transform:rotate(45deg);
+            span:nth-child(2)
+                transform:rotate(-45deg);
+        .contactForm_container
+            width 100%
+            height 100%
+            display flex
+            justify-content center
+            align-items center
+            label 
+                font-family: 'ZCOOL QingKe HuangYou', cursive;
+                font-size 1.5em
+                color #f0f0f0
+                margin-bottom 5%
+                margin-top 3%
+
+
+    .project-container
+        width 100vw
+        height 100vh
+        transition transform 0.5s ease
+        position absolute
+        transform translateX(-100%)
+        z-index 20
+        opacity 0
+        .close 
+            position: absolute;
+            top: 6%;
+            left: 96%;
+            transform: translate(-50%, -50%);
+            height: 8%;
+            width: 8%;
+            cursor: pointer;
+            z-index: 1000;
+            span 
+                display: block;
+                width: 40%;
+                height: 0.5vh;
+                position: absolute;
+                top: 50%;
+                left: 30%;
+                transform: translate(-50%, -50%);
+                background: #000000;
+                transition: 0.5s;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, .20);
+            span:nth-child(1)
+                transform:rotate(45deg);
+            span:nth-child(2)
+                transform:rotate(-45deg);
+        .project_content
+            background #FFF9EC
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .20)
+            margin auto
+            transform: translateY(12%)
+            width 70%
+            height 80vh
+            opacity 0.9
+            a
+                font-family: 'ZCOOL QingKe HuangYou', cursive;
+                letter-spacing: 0.1em 
+                color #FFF9EC
+            strong 
+                font-weight: bold;
+            h4
+                text-transform uppercase
+                font-family: 'Oswald', sans-serif;
+                color #000000
+                letter-spacing: 0.1em
+                font-weight: bold;
+                font-size 1.9em
+                margin-bottom 10%
+                margin-top 15%
+            p 
+                font-size 1.2em
+                font-family: 'Oswald', sans-serif;
+                letter-spacing: 0.1em
+            .project_tech
+                margin-top 5%
+                line-height 1.5
+                .slider-container
+                    background #010101
+                    .slider
+                        height 400px
+                        .slides
+                            background #000000
+            .discover
+                position absolute
+                width 90%
+                height 7%
+                top 90%
+                margin auto
+                border: none;
+                color: FFF9EC
+                padding: 8px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 1.3em;
+    footer 
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        margin-top 5%
+        background-color: #181844;
+        text-align: center;
+        h6 
+            color #FFF9EC
+            font-family: 'ZCOOL QingKe HuangYou', cursive;
+            font-size 1.3em
+            color #f0f0f0
+            opacity 0.8
+            letter-spacing: 0.1em
+        .coded
+            float left
+            padding-left 5%
+        .designed
+            float right
+            padding-right 5%
+                
+            
+
+
+        
+                
+            
+
+    
+
+
+  
